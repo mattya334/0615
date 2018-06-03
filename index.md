@@ -1,6 +1,8 @@
-﻿# ** Zoogゲーム**
+﻿# **Zoogゲーム**
 
-![2018-06-02 16.50.29](images/enshu.gif)
+<!-- ![2018-06-02 16.50.29](images/enshu.gif) -->
+<canvas data-processing-sources="assets/Draw/Draw.pde"></canvas>
+<script src="assets/processing.js"></script>
 <script></script>
 
 #### 提出日 2018/06/15
@@ -41,7 +43,7 @@
 
 
 ## クラス
-![classDiagram](http://yuml.me/81763b16.png)
+![classDiagram](http://yuml.me/6b520cac.png)
 
 説明 :
 Drawクラスで描画。

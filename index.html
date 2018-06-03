@@ -12,39 +12,55 @@
   <div class="stackedit__left">
     <div class="stackedit__toc">
 
-<ul>
-<li><a href="#zoogゲーム">** Zoogゲーム**</a>
-<ul>
-<li>
-<ul>
-<li></li>
-</ul>
-</li>
-<li><a href="#仕様">仕様</a></li>
-<li><a href="#ファイル構成">ファイル構成</a></li>
-<li><a href="#クラス">クラス</a></li>
-<li><a href="#役割分担">役割分担</a></li>
-</ul>
-</li>
-</ul>
+      <ul>
+        <li>
+          <a href="#zoogゲーム">** Zoogゲーム**</a>
+          <ul>
+            <li>
+              <ul>
+                <li></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#仕様">仕様</a>
+            </li>
+            <li>
+              <a href="#ファイル構成">ファイル構成</a>
+            </li>
+            <li>
+              <a href="#クラス">クラス</a>
+            </li>
+            <li>
+              <a href="#役割分担">役割分担</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
 
     </div>
   </div>
   <div class="stackedit__right">
     <div class="stackedit__html">
       <h1 id="zoogゲーム">** Zoogゲーム**</h1>
-<p><img src="images/enshu.gif" alt="2018-06-02 16.50.29"></p>
+      <p>
+        <!-- <img src="" alt="2018-06-02 16.50.29"> -->
+        <canvas data-processing-sources="assets/Draw/Draw.pde"></canvas>
+        <script src="assets/processing.js"></script>
+      </p>
 
-<h4 id="提出日-20180615">提出日 2018/06/15</h4>
-<h4 id="作成者-541xxxx-541xxxx-541xxxx">作成者 541xxxx, 541xxxx, 541xxxx</h4>
-<h4 id="source--github-onedrive">Source : <a href="https://github.com/moriakijp/0615">Github</a>, <a href="https://1drv.ms/f/s!AtoKHagF3g3Bg4Bt62m3GWnqKWiBoQ">Onedrive</a></h4>
-<hr>
-<h2 id="仕様">仕様</h2>
-<p>ルール : Zoogの目にBallが当たると消える。両目を潰すと倒せる。制限時間20秒。</p>
-<p>開始 : [Space]キーを押す</p>
-<hr>
-<h2 id="ファイル構成">ファイル構成</h2>
-<pre><code>0615
+      <h4 id="提出日-20180615">提出日 2018/06/15</h4>
+      <h4 id="作成者-541xxxx-541xxxx-541xxxx">作成者 541xxxx, 541xxxx, 541xxxx</h4>
+      <h4 id="source--github-onedrive">Source :
+        <a href="https://github.com/moriakijp/0615">Github</a>,
+        <a href="https://1drv.ms/f/s!AtoKHagF3g3Bg4Bt62m3GWnqKWiBoQ">Onedrive</a>
+      </h4>
+      <hr>
+      <h2 id="仕様">仕様</h2>
+      <p>ルール : Zoogの目にBallが当たると消える。両目を潰すと倒せる。制限時間20秒。</p>
+      <p>開始 : [Space]キーを押す</p>
+      <hr>
+      <h2 id="ファイル構成">ファイル構成</h2>
+      <pre><code>0615
 ├── images
 │   ├── 81763b16.png
 │   └── enshu.gif
@@ -63,164 +79,168 @@
 
 3 directories, 12 files
 </code></pre>
-<h2 id="クラス">クラス</h2>
-<p><img src="http://yuml.me/81763b16.png" alt="classDiagram"></p>
-<p>説明 :<br>
-Drawクラスで描画。<br>
-Playerクラスでマウス座標に追従する板を描画。</p>
-<p>使用したUMLモデリングツール : <a href="https://yuml.me/diagram/scruffy/class/draw">yuml.me</a> &lt;&lt; uml.txt</p>
-<h2 id="役割分担">役割分担</h2>
+      <h2 id="クラス">クラス</h2>
+      <p>
+        <img src="http://yuml.me/6b520cac.png" alt="classDiagram">
+      </p>
+      <p>説明 :
+        <br> Drawクラスで描画。
+        <br> Playerクラスでマウス座標に追従する板を描画。
+      </p>
+      <p>使用したUMLモデリングツール :
+        <a href="https://yuml.me/diagram/scruffy/class/draw">yuml.me</a> &lt;&lt; uml.txt</p>
+      <h2 id="役割分担">役割分担</h2>
 
-<table>
-<thead>
-<tr>
-<th>Draw</th>
-<th>Time</th>
-<th>Count</th>
-<th>Message</th>
-<th>Zoog</th>
-<th>NormalZoog</th>
-<th>StoppingZoog</th>
-<th>SmartZoog</th>
-<th>Ball</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>541xxxx</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr>
-<td>541xxxx</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr>
-<td>541xxxx</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>Draw</th>
-<th>Time</th>
-<th>Count</th>
-<th>Message</th>
-<th>Zoog</th>
-<th>NormalZoog</th>
-<th>StoppingZoog</th>
-<th>SmartZoog</th>
-<th>Ball</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>541xxxx</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr>
-<td>541xxxx</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr>
-<td>541xxxx</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>Draw</th>
-<th>Time</th>
-<th>Count</th>
-<th>Message</th>
-<th>Zoog</th>
-<th>NormalZoog</th>
-<th>StoppingZoog</th>
-<th>SmartZoog</th>
-<th>Ball</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>541xxxx</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr>
-<td>541xxxx</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr>
-<td>541xxxx</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-</tr>
-</tbody>
-</table>
+      <table>
+        <thead>
+          <tr>
+            <th>Draw</th>
+            <th>Time</th>
+            <th>Count</th>
+            <th>Message</th>
+            <th>Zoog</th>
+            <th>NormalZoog</th>
+            <th>StoppingZoog</th>
+            <th>SmartZoog</th>
+            <th>Ball</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>541xxxx</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>541xxxx</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>541xxxx</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+        </tbody>
+      </table>
+      <table>
+        <thead>
+          <tr>
+            <th>Draw</th>
+            <th>Time</th>
+            <th>Count</th>
+            <th>Message</th>
+            <th>Zoog</th>
+            <th>NormalZoog</th>
+            <th>StoppingZoog</th>
+            <th>SmartZoog</th>
+            <th>Ball</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>541xxxx</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>541xxxx</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>541xxxx</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+        </tbody>
+      </table>
+      <table>
+        <thead>
+          <tr>
+            <th>Draw</th>
+            <th>Time</th>
+            <th>Count</th>
+            <th>Message</th>
+            <th>Zoog</th>
+            <th>NormalZoog</th>
+            <th>StoppingZoog</th>
+            <th>SmartZoog</th>
+            <th>Ball</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>541xxxx</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>541xxxx</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>541xxxx</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </body>
