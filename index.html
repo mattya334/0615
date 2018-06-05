@@ -47,45 +47,164 @@
       <canvas data-processing-sources="assets/Zooggame/Count.pde assets/Zooggame/StoppingZoog.pde assets/Zooggame/Player.pde assets/Zooggame/Zoog.pde assets/Zooggame/SmartZoog.pde assets/Zooggame/Time.pde assets/Zooggame/Zooggame.pde assets/Zooggame/Messsage.pde assets/Zooggame/NormalZoog.pde"></canvas>
       <h4 id="提出日-20180615">提出日 2018/06/15</h4>
       <h4 id="作成者-541xxxx-541xxxx-541xxxx">作成者 541xxxx, 541xxxx, 541xxxx</h4>
-      <h4 id="source-">Source :</h4>
-      <p>
+      <h4 id="source--github-onedrive-raw">Source :
         <a href="https://github.com/moriakijp/0615">Github</a>
-      </p>
-      <p>
         <a href="https://1drv.ms/f/s!AtoKHagF3g3Bg4Bt62m3GWnqKWiBoQ">Onedrive</a>
-      </p>
-      <p>
         <a href="tree.html">Raw</a>
-      </p>
+      </h4>
       <hr>
       <h2 id="仕様">仕様</h2>
-      <p>ルール : Zoogの目にBallが当たると消える。両目を潰すと倒せる。制限時間20秒。</p>
-      <p>開始 : [Space]キーを押す</p>
+      <p>ルール : Zoogの目にBallが当たると消える。両目を潰すと倒せる。制限時間20秒。
+        <br> 開始 : [Space]キーを押す</p>
       <hr>
       <h2 id="クラス">クラス</h2>
       <p>
         <img src="http://yuml.me/6b520cac.png" alt="classDiagram">
-      </p>
-      <p>説明 :</p>
-      <p>Drawクラスで描画。</p>
-      <p>Playerクラスでマウス座標に追従する板を描画。</p>
-      <p>使用したUMLモデリングツール :
+        <br> 説明 :
+        <br> Drawクラスで描画。
+        <br> Playerクラスでマウス座標に追従する板を描画。
+        <br> 使用したUMLモデリングツール :
         <a href="https://yuml.me/diagram/scruffy/class/draw">yuml.me</a> &lt;&lt; uml.txt</p>
       <h2 id="役割分担">役割分担</h2>
-      <p>| | Zooggame | Count | Message | Zoog | NormalZoog | StoppingZoog | SmartZoog | Ball |</p>
-      <p>| :-----: | :------: | :—: | :-----: | :—: | :--------: | :----------: | :-------: | :—: |</p>
-      <p>| 541xxxx | - | - | - | - | - | - | - | - |</p>
-      <p>| 541xxxx | - | - | - | - | - | - | - | - |</p>
-      <p>| 541xxxx | - | - | - | - | - | - | - | - |</p>
-      <p>| | Player | Block | Wall | | | | | |</p>
-      <p>| 541xxxx | | | | | | | | |</p>
-      <p>| 541xxxx | | | | | | | | |</p>
-      <p>| 541xxxx | | | | | | | | |</p>
-      <p>| | | | | | | | | |</p>
-      <p>| 541xxxx | | | | | | | | |</p>
-      <p>| 541xxxx | | | | | | | | |</p>
-      <p>| 541xxxx | | | | | | | | |</p>
 
+      <table>
+        <thead>
+          <tr>
+            <th align="center"></th>
+            <th align="center">Zooggame</th>
+            <th align="center">Count</th>
+            <th align="center">Message</th>
+            <th align="center">Zoog</th>
+            <th align="center">NormalZoog</th>
+            <th align="center">StoppingZoog</th>
+            <th align="center">SmartZoog</th>
+            <th align="center">Ball</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="center">541xxxx</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+          </tr>
+          <tr>
+            <td align="center">541xxxx</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+          </tr>
+          <tr>
+            <td align="center">541xxxx</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+          </tr>
+          <tr>
+            <td align="center"></td>
+            <td align="center">Player</td>
+            <td align="center">Block</td>
+            <td align="center">Wall</td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+          </tr>
+          <tr>
+            <td align="center">541xxxx</td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+          </tr>
+          <tr>
+            <td align="center">541xxxx</td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+          </tr>
+          <tr>
+            <td align="center">541xxxx</td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+          </tr>
+          <tr>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+          </tr>
+          <tr>
+            <td align="center">541xxxx</td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+          </tr>
+          <tr>
+            <td align="center">541xxxx</td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+          </tr>
+          <tr>
+            <td align="center">541xxxx</td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </body>
