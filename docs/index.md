@@ -5,6 +5,7 @@
 #### Source :
 [Github](https://github.com/moriakijp/0615)
 [Onedrive](https://1drv.ms/f/s!AtoKHagF3g3Bg4Bt62m3GWnqKWiBoQ)
+[Link](docs/tree.html)
 
 ---
 
@@ -14,43 +15,6 @@
 
 開始 : [Space]キーを押す
 
----
-## ファイル構成
-```
-0615
-├── index.html
-├── images
-│   └── enshu.gif
-├── docs
-│   ├── uml.txt
-│   └── index.md
-├── scripts
-│   └── Draw
-│       ├── Count.pde
-│       ├── StoppingZoog.pde
-│       ├── Zoog.pde
-│       ├── SmartZoog.pde
-│       ├── Time.pde
-│       ├── Messsage.pde
-│       ├── NormalZoog.pde
-│       └── Draw.pde
-└── assets
-    ├── processing.js
-    ├── processing.min.js
-    └── Zooggame
-        ├── Count.pde
-        ├── StoppingZoog.pde
-        ├── Player.pde
-        ├── Zoog.pde
-        ├── SmartZoog.pde
-        ├── Time.pde
-        ├── Zooggame.pde
-        ├── Messsage.pde
-        └── NormalZoog.pde
-
-6 directories, 23 files
-
-```
 ---
 ## クラス
 ![classDiagram](http://yuml.me/6b520cac.png)

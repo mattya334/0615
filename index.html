@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>index.md</title>
   <link rel="stylesheet" href="https://stackedit.io/style.css" />
-  <script src="assets/processing.min.js"></script>
 </head>
 
 <body class="stackedit">
@@ -24,9 +23,6 @@
             </li>
             <li>
               <a href="#仕様">仕様</a>
-            </li>
-            <li>
-              <a href="#ファイル構成">ファイル構成</a>
             </li>
             <li>
               <a href="#クラス">クラス</a>
@@ -47,17 +43,6 @@
           <strong>Zooggame</strong>
         </em>
       </h1>
-      <canvas data-processing-sources="
-      assets/Zooggame/Zassets/Zooggame/Count.pde
-      assets/Zooggame/Messsage.pde
-      assets/Zooggame/NormalZoog.pde
-      assets/Zooggame/Player.pde
-      assets/Zooggame/SmartZoog.pde
-      assets/Zooggame/StoppingZoog.pde
-      assets/Zooggame/Time.pde
-      assets/Zooggame/Zoog.pde
-      assets/Zooggame/Zooggame.pde
-      "></canvas>
       <h4 id="提出日-20180615">提出日 2018/06/15</h4>
       <h4 id="作成者-541xxxx-541xxxx-541xxxx">作成者 541xxxx, 541xxxx, 541xxxx</h4>
       <h4 id="source-">Source :</h4>
@@ -67,80 +52,13 @@
       <p>
         <a href="https://1drv.ms/f/s!AtoKHagF3g3Bg4Bt62m3GWnqKWiBoQ">Onedrive</a>
       </p>
+      <p>
+        <a href="docs/tree.html">Link</a>
+      </p>
       <hr>
       <h2 id="仕様">仕様</h2>
       <p>ルール : Zoogの目にBallが当たると消える。両目を潰すと倒せる。制限時間20秒。</p>
       <p>開始 : [Space]キーを押す</p>
-      <hr>
-      <h2 id="ファイル構成">ファイル構成</h2>
-      <pre><code>
-0615
-
-├── index.html
-
-├── images
-
-│ └── enshu.gif
-
-├── docs
-
-│ ├── uml.txt
-
-│ └── index.md
-
-├── scripts
-
-│ └── Draw
-
-│ ├── Count.pde
-
-│ ├── StoppingZoog.pde
-
-│ ├── Zoog.pde
-
-│ ├── SmartZoog.pde
-
-│ ├── Time.pde
-
-│ ├── Messsage.pde
-
-│ ├── NormalZoog.pde
-
-│ └── Draw.pde
-
-└── assets
-
-├── processing.js
-
-├── processing.min.js
-
-└── Zooggame
-
-├── Count.pde
-
-├── StoppingZoog.pde
-
-├── Player.pde
-
-├── Zoog.pde
-
-├── SmartZoog.pde
-
-├── Time.pde
-
-├── Zooggame.pde
-
-├── Messsage.pde
-
-└── NormalZoog.pde
-
-
-
-6 directories, 23 files
-
-
-
-</code></pre>
       <hr>
       <h2 id="クラス">クラス</h2>
       <p>
@@ -153,17 +71,17 @@
         <a href="https://yuml.me/diagram/scruffy/class/draw">yuml.me</a> &lt;&lt; uml.txt</p>
       <h2 id="役割分担">役割分担</h2>
       <p>| | Zooggame | Count | Message | Zoog | NormalZoog | StoppingZoog | SmartZoog | Ball |</p>
-      <p>|:-------:|:----------:|:-----:|:-------:|:----:|:----------:|:------------:|:---------:|:----:|</p>
+      <p>| :-----: | :------: | :—: | :-----: | :—: | :--------: | :----------: | :-------: | :—: |</p>
       <p>| 541xxxx | - | - | - | - | - | - | - | - |</p>
       <p>| 541xxxx | - | - | - | - | - | - | - | - |</p>
       <p>| 541xxxx | - | - | - | - | - | - | - | - |</p>
       <p>| | Player | Block | Wall | | | | | |</p>
-      <p>|:-------:|:------:|:-----:|:-------:|:----:|:----------:|:------------:|:---------:|:----:|</p>
+      <p>| :-----: | :----: | :—: | :—: | :—: | :—: | :—: | :—: | :—: |</p>
       <p>| 541xxxx | | | | | | | | |</p>
       <p>| 541xxxx | | | | | | | | |</p>
       <p>| 541xxxx | | | | | | | | |</p>
       <p>| | | | | | | | | |</p>
-      <p>|:-------:|:------:|:-----:|:-------:|:----:|:----------:|:------------:|:---------:|:----:|</p>
+      <p>| :-----: | :—: | :—: | :—: | :—: | :—: | :—: | :—: | :—: |</p>
       <p>| 541xxxx | | | | | | | | |</p>
       <p>| 541xxxx | | | | | | | | |</p>
       <p>| 541xxxx | | | | | | | | |</p>
