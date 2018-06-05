@@ -1,13 +1,10 @@
-﻿# **Zoogゲーム**
-
-<!-- ![2018-06-02 16.50.29](images/enshu.gif) -->
-<canvas data-processing-sources="assets/Draw/Draw.pde"></canvas>
-<script src="assets/processing.js"></script>
-<script></script>
+﻿# ***Zooggame***
 
 #### 提出日 2018/06/15
 #### 作成者 541xxxx, 541xxxx, 541xxxx
-#### Source : [Github](https://github.com/moriakijp/0615), [Onedrive](https://1drv.ms/f/s!AtoKHagF3g3Bg4Bt62m3GWnqKWiBoQ)
+#### Source :
+[Github](https://github.com/moriakijp/0615)
+[Onedrive](https://1drv.ms/f/s!AtoKHagF3g3Bg4Bt62m3GWnqKWiBoQ)
 
 ---
 
@@ -21,27 +18,40 @@
 ## ファイル構成
 ```
 0615
-├── images
-│   ├── 81763b16.png
-│   └── enshu.gif
 ├── index.html
-├── index.md
-└── scripts
-    └── Draw
+├── images
+│   └── enshu.gif
+├── docs
+│   ├── uml.txt
+│   └── index.md
+├── scripts
+│   └── Draw
+│       ├── Count.pde
+│       ├── StoppingZoog.pde
+│       ├── Zoog.pde
+│       ├── SmartZoog.pde
+│       ├── Time.pde
+│       ├── Messsage.pde
+│       ├── NormalZoog.pde
+│       └── Draw.pde
+└── assets
+    ├── processing.js
+    ├── processing.min.js
+    └── Zooggame
         ├── Count.pde
-        ├── Draw.pde
-        ├── Messsage.pde
-        ├── NormalZoog.pde
-        ├── SmartZoog.pde
         ├── StoppingZoog.pde
+        ├── Player.pde
+        ├── Zoog.pde
+        ├── SmartZoog.pde
         ├── Time.pde
-        └── Zoog.pde
+        ├── Zooggame.pde
+        ├── Messsage.pde
+        └── NormalZoog.pde
 
-3 directories, 12 files
+6 directories, 23 files
+
 ```
-
-
-
+---
 ## クラス
 ![classDiagram](http://yuml.me/6b520cac.png)
 
@@ -55,23 +65,20 @@ Playerクラスでマウス座標に追従する板を描画。
 
 ## 役割分担
 
+|         |  Zooggame  | Count | Message | Zoog | NormalZoog | StoppingZoog | SmartZoog | Ball |
+|:-------:|:----------:|:-----:|:-------:|:----:|:----------:|:------------:|:---------:|:----:|
+| 541xxxx |      -     |   -   |    -    |   -  |      -     |       -      |     -     |   -  |
+| 541xxxx |      -     |   -   |    -    |   -  |      -     |       -      |     -     |   -  |
+| 541xxxx |      -     |   -   |    -    |   -  |      -     |       -      |     -     |   -  |
 
- Draw   | Time | Count | Message | Zoog | NormalZoog | StoppingZoog | SmartZoog | Ball
-------- | ---- | ----- | ------- | ---- | ---------- | ------------ | --------- | ----
-541xxxx | -    | -     | -       | -    | -          | -            | -         | -
-541xxxx | -    | -     | -       | -    | -          | -            | -         | -
-541xxxx | -    | -     | -       | -    | -          | -            | -         | -
+|         | Player | Block |   Wall  |     |            |              |           |      |
+|:-------:|:------:|:-----:|:-------:|:----:|:----------:|:------------:|:---------:|:----:|
+| 541xxxx |        |       |         |      |            |              |           |      |
+| 541xxxx |        |       |         |      |            |              |           |      |
+| 541xxxx |        |       |         |      |            |              |           |      |
 
-
- Draw   | Time | Count | Message | Zoog | NormalZoog | StoppingZoog | SmartZoog | Ball
-------- | ---- | ----- | ------- | ---- | ---------- | ------------ | --------- | ----
-541xxxx | -    | -     | -       | -    | -          | -            | -         | -
-541xxxx | -    | -     | -       | -    | -          | -            | -         | -
-541xxxx | -    | -     | -       | -    | -          | -            | -         | -
-
-
- Draw   | Time | Count | Message | Zoog | NormalZoog | StoppingZoog | SmartZoog | Ball
-------- | ---- | ----- | ------- | ---- | ---------- | ------------ | --------- | ----
-541xxxx | -    | -     | -       | -    | -          | -            | -         | -
-541xxxx | -    | -     | -       | -    | -          | -            | -         | -
-541xxxx | -    | -     | -       | -    | -          | -            | -         | -
+|         |        |       |         |      |            |              |           |      |
+|:-------:|:------:|:-----:|:-------:|:----:|:----------:|:------------:|:---------:|:----:|
+| 541xxxx |        |       |         |      |            |              |           |      |
+| 541xxxx |        |       |         |      |            |              |           |      |
+| 541xxxx |        |       |         |      |            |              |           |      |
