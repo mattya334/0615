@@ -7,19 +7,5 @@ void setup() {
 }
 
 void draw() {
-  state = state.load();
-}
-
-
-/* Event handler */
-
-void keyPressed() {
-  
-}
-
-void mousePressed() {
-}
-
-void mouseReleased() {
-  loop();
+  state = state.load(); //<>//
 }

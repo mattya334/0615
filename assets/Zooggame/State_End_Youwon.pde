@@ -1,5 +1,10 @@
 class State_End_Youwon extends State {
-
+  int stage;
+  
+  State_End_Youwon(int stage) {
+   this.stage = stage;
+  }
+  
   void display() {
     background(255);
     textSize(36);
@@ -15,7 +20,7 @@ class State_End_Youwon extends State {
 
   State next() {
     if (t_state > 3 && keyPressed && key == 'g')
-      return new State_Title(2);
+      return new State_Title(stage+1);
     if (t_state > 3 && keyPressed && key == 'r')
       return new State_Title(1);
     

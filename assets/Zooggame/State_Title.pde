@@ -1,10 +1,10 @@
 class State_Title extends State {
   Zoog[] zoog;
-  int n;
+  int stage;
   
-  State_Title(int n){
-    this.n = n;
-    this.zoog = new Zoog[n];
+  State_Title(int stage){
+    this.stage = stage;
+    this.zoog = new Zoog[stage];
   }
  
   void display() {
@@ -21,13 +21,13 @@ class State_Title extends State {
     textAlign(CENTER, CENTER);
     text("Zooggame", width * 0.5, height * 0.3);
     textSize(20);
-    text("STAGE "+n, width * 0.5, height * 0.6);
+    text("STAGE "+stage, width * 0.5, height * 0.6);
     text("Press [SPACE] to start", width * 0.5, height * 0.7);
   }
 
   State next() {
     if (keyPressed && key == ' ') {
-      return new State_Game(30, n*8, 60, 10);
+      return new State_Game(30, stage, 60, 10);
     }
     return this;
   }

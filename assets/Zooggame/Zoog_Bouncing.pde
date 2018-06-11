@@ -1,8 +1,8 @@
-class Zoog_Bounsing extends Zoog {
+class Zoog_Bouncing extends Zoog {
   int x_d = ((int)random(2)*2-1), y_d = 1;
   float speed = 1;
 
-  Zoog_Bounsing(float x, float y) {
+  Zoog_Bouncing(float x, float y) {
     super(x, y);
   }
 

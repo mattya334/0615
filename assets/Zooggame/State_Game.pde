@@ -5,15 +5,16 @@ class State_Game extends State {
   Count count;
   int t_limit;
   int t_remain;
+  int stage;
   boolean isdead;
-
-  State_Game(int t_limit, int n, int w, int h) {
+  State_Game(int t_limit, int stage, int w, int h) {
     this.t_limit = t_limit;
-    this.zoog = new Zoog[n];
+    this.zoog = new Zoog[stage*6]; 
     for (int i=0; i<zoog.length; i++)
-      zoog[i] = new Zoog_Bounsing((int)random(width), (int)random(-100*n,0));
+      zoog[i] = new Zoog_Bouncing((int)random(width), (int)random(-800*(1+0.01*stage),0));
     board = new Board(w, h);
     count = new Count(zoog);
+    this.stage = stage;
   }
 
   void display() {
@@ -45,7 +46,7 @@ class State_Game extends State {
         break;
       } else isdead = true;
     }
-    if (isdead) return new State_End_Youwon();
+    if (isdead) return new State_End_Youwon(stage);
     else if ( !isdead && t_remain<=0 ) return new State_End_Timesup();
     return this;
   }

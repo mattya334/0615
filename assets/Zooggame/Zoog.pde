@@ -1,7 +1,6 @@
 abstract class Zoog {
   float x, y, w, h, eye;
-  boolean isLeftEyeBroken = false;
-  boolean isRightEyeBroken = false;
+  boolean eye_l = false, eye_r = false;
 
     Zoog(float x, float y) {
     this.x = x;
@@ -28,11 +27,11 @@ abstract class Zoog {
     line(x-w/6, y+h*5/6, x-w/3, y+h); // left leg
     line(x+w/6, y+h*5/6, x+w/3, y+h); // right leg
     
-    if ( !isLeftEyeBroken ) {
+    if ( !eye_l ) {
       fill(0);
       ellipse(x-w/3+1, y-h/2, eye, eye*2);
     }
-    if ( !isRightEyeBroken ) {
+    if ( !eye_r ) {
       fill(0);
       ellipse(x+w/3-1, y-h/2, eye, eye*2);
     }
@@ -40,16 +39,16 @@ abstract class Zoog {
 
   void hit(int hx, int hy) {
     if (sq(hx - (x-19))/(8*8) + sq(hy - (y-30))/(16*16) < 1)
-      isLeftEyeBroken = true;
+      eye_l = true;
     if (sq(hx - (x+19))/(8*8) + sq(hy - (y-30))/(16*16) < 1)
-      isRightEyeBroken = true;
+      eye_r = true;
   }
   //void refrected(){
   //  if
   //}
   
   boolean isDead() {
-    return (isLeftEyeBroken && isRightEyeBroken);
+    return (eye_l && eye_r);
     //return (isHeadReflected);
   }
 }
