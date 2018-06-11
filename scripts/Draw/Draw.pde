@@ -4,10 +4,10 @@ void setup(){
 
   Time time       = new Time(30);
   Count count     = new Count();
-  Message message = new Message();;
+  Message message = new Message();
   Zoog[] zoog     = new Zoog[3];
 
-  for(int i=0; i<zoog.length; i++){ zoog[i] = new Zoog(); }
+  //for(int i=0; i<zoog.length; i++){ zoog[i] = new Zoog(); }
   zoog[0] = new NormalZoog(200, 200);
   zoog[1] = new StoppingZoog(300, 200);
   zoog[2] = new SmartZoog(400, 200);
