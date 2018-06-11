@@ -18,11 +18,8 @@ Zoogを倒してステージを進めよう。
 ---
 ## クラス
 
-![classDiagram]([http://yuml.me/moriakijp/zooggame.svg](http://yuml.me/moriakijp/zooggame.svg))
-説明 :
-Drawクラスで描画。
-Playerクラスでマウス座標に追従する板を描画。
-使用したUMLモデリングツール : [yuml.me](https://yuml.me/diagram/scruffy/class/draw ) << uml.txt
+![classDiagram](https://yuml.me/moriakijp/zooggame.png))
+使用したUMLモデリングツール : [yuml.me](https://yuml.me/diagram/scruffy/class/draw ) < uml.txt
 
 ## 役割分担
 
