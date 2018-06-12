@@ -7,6 +7,7 @@ class State_Game extends State {
   int t_remain;
   int stage;
   boolean isdead;
+  
   State_Game(int t_limit, int stage, int w, int h) {
     this.t_limit = t_limit;
     this.zoog = new Zoog[stage*6]; 

@@ -1,7 +1,7 @@
 abstract class Zoog {
   float x, y, w, h, eye;
+  int x_d, y_d;
   boolean eye_l = false, eye_r = false;
-
     Zoog(float x, float y) {
     this.x = x;
     this.y = y;
@@ -43,12 +43,8 @@ abstract class Zoog {
     if (sq(hx - (x+19))/(8*8) + sq(hy - (y-30))/(16*16) < 1)
       eye_r = true;
   }
-  //void refrected(){
-  //  if
-  //}
   
   boolean isDead() {
     return (eye_l && eye_r);
-    //return (isHeadReflected);
   }
 }
