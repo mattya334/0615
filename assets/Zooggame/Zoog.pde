@@ -37,7 +37,8 @@ abstract class Zoog {
     }
   }
 
-  void hit(int hx, int hy) {
+
+  void crush(int hx, int hy) {
     if (sq(hx - (x-19))/(8*8) + sq(hy - (y-30))/(16*16) < 1)
       eye_l = true;
     if (sq(hx - (x+19))/(8*8) + sq(hy - (y-30))/(16*16) < 1)

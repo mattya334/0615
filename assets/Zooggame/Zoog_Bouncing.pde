@@ -1,9 +1,10 @@
 class Zoog_Bouncing extends Zoog {
-  int x_d = ((int)random(2)*2-1), y_d = 1;
+  int x_d = ((int)random(2)*2-1), y_d = 1, hitcount;
   float speed = 1;
   
   Zoog_Bouncing(float x, float y) {
     super(x, y);
+    hitcount = 0;
   }
 
   void move() {
@@ -14,7 +15,7 @@ class Zoog_Bouncing extends Zoog {
     //if( y>height || y<0 ) y_d *= -1;  //Bounce Top and Bottom Wall
   
     if ( x<mouseX+60 && x>mouseX-60 && y== height-30 ) { 
-      y_d *= -1;                        //Bounce on Board
+      y_d *= -1; hitcount++;            //Bounce on Board
     }
   }
   

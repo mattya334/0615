@@ -27,7 +27,7 @@ class State_Game extends State {
 
     if (mousePressed)
       for (int i=0; i<zoog.length; i++)
-        zoog[i].hit(mouseX, mouseY);
+        zoog[i].crush(mouseX, mouseY);
 
     board.display();
     board.move();
