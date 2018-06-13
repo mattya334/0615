@@ -14,12 +14,12 @@ class Description extends State{
     textAlign(CENTER, CENTER);
     text("Zooggame", width * 0.5, height * 0.3);
     textSize(20);
-    text("Zoogの目をつぶしてください。Zoogを跳ね返すと残り時間が増えます。", width * 0.5, height * 0.7);
+    text("Zoogの目をつぶしてください。", width * 0.5, height * 0.7);
     text("Press [B] to Title", width * 0.5, height * 0.9);
   }
   
   State next() {
-    if (keyPressed && key == 'b') {
+    if (keyPressed && (key == 'b' || key == 'B')) {
       return new State_Title(stage);
     }
     return this;
