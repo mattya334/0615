@@ -23,12 +23,16 @@ class State_Title extends State {
     textSize(20);
     text("STAGE "+stage, width * 0.5, height * 0.6);
     text("Press [SPACE] to start", width * 0.5, height * 0.7);
+    text("Press [ENTER] to setumei", width * 0.5, height * 0.8);
   }
 
   State next() {
     if (keyPressed && key == ' ') {
       return new State_Game(30, stage, 60, 10);
     }
+      if(keyPressed && key == ENTER) {
+    return new Description(stage);
+  }
     return this;
   }
 }
