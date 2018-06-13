@@ -30,7 +30,7 @@ class State_Title extends State {
     if (keyPressed && key == ' ') {
       return new State_Game(30, stage, 60, 10);
     }
-      if(keyPressed && key == S) {
+      if(keyPressed && key == 's') {
     return new Description(stage);
   }
     return this;

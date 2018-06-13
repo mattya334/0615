@@ -15,7 +15,7 @@ class Description extends State{
     text("Zooggame", width * 0.5, height * 0.3);
     textSize(20);
     text("Zoogの目をつぶしてください。", width * 0.5, height * 0.7);
-    text("Press [B] to Title", width * 0.5, height * 0.9);
+    text("Press [B] to Title", width * 0.5, height * 0.8);
   }
   
   State next() {
