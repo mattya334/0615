@@ -6,8 +6,7 @@ class Description extends State{
 
   void display(){
     background(255);
-    PFont font = createFont("MS Gothic",48,true);
-    textFont (font);
+  
   
     fill(0);
     textSize(36);
